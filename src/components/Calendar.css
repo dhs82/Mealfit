@@ -1,0 +1,19 @@
+/* src/components/Calendar.css */
+.react-calendar {
+  width: 100%;
+  border: none;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.react-calendar__tile {
+  padding: 0.75rem !important;
+}
+
+.react-calendar__tile--now {
+  background: #d1fae5 !important;
+}
+
+.react-calendar__tile--active {
+  background: #60a5fa !important;
+  color: white !important;
+}
