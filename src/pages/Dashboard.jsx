@@ -18,7 +18,7 @@ const Dashboard = () => {
 
   return (
     <div className="p-8 space-y-10">
-      <h1 className="text-4xl font-bold text-gray-800 text-center">
+      <h1 className="text-3xl font-bold text-gray-800">
         오늘의 식수 인원 예측
       </h1>
 

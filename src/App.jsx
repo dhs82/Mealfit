@@ -1,9 +1,21 @@
 // src/App.jsx
-import React from "react";
-import Dashboard from "./pages/Dashboard";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Dashboard from './pages/Dashboard';
+import MealLogPage from './pages/MealLogPage';
+import NavBar from './components/NavBar';
+import Report from './pages/Report';
 
-const App = () => {
-  return <Dashboard />;
-};
+function App() {
+  return (
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/meal-log" element={<MealLogPage />} />
+        <Route path="/report" element={<Report />} />
+      </Routes>
+    </Router>
+  );
+}
 
 export default App;
