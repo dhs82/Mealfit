@@ -1,0 +1,8 @@
+npm / 라우팅 설치
+npm install
+npm install react-router-dom
+
+디자인 요소
+npm install -D tailwindcss postcss autoprefixer
+npm install @mui/icons-material @mui/material
+npm install react-icons
