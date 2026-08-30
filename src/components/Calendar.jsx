@@ -1,19 +1,35 @@
 // src/components/Calendar.jsx
-import React from "react";
-import ReactCalendar from "react-calendar";
-import "react-calendar/dist/Calendar.css";
-import "./Calendar.css"; // 추가 커스터마이징 (옵션)
+import React from 'react';
+import ReactCalendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
+import './Calendar.css';
 
-const Calendar = ({ selectedDate, onDateChange }) => {
+export default function Calendar({
+  onDateClick,
+  onDateChange,
+  selectedDate,
+  size = 'normal',
+  interactive = true,
+}) {
+  const handleDayClick = (dateObj) => {
+    if (!interactive) return;
+    const year  = dateObj.getFullYear();
+    const month = String(dateObj.getMonth() + 1).padStart(2, '0');
+    const day   = String(dateObj.getDate()).padStart(2, '0');
+    const localDateString = `${year}-${month}-${day}`;
+    onDateClick?.(localDateString);
+    onDateChange?.(dateObj);
+  };
+
   return (
-    <div className="rounded-md shadow-sm border p-4 bg-white">
+    // ✅ large일 때만 calendar-lg 래퍼 클래스 부여(실제 사이즈는 CSS에서 키움)
+    <div className={`mx-auto ${size === 'large' ? 'calendar-lg mb-4' : ''}`}>
       <ReactCalendar
-        onChange={onDateChange}
-        value={selectedDate}
-        className="w-full" // 필요시 Tailwind 클래스 추가
+        onClickDay={interactive ? handleDayClick : undefined}
+        value={selectedDate ? new Date(selectedDate) : new Date()}
+        // ‘8일’ 같은 줄바꿈 방지 + 숫자만 표시
+        formatDay={(locale, date) => String(date.getDate())}
       />
     </div>
   );
-};
-
-export default Calendar;
+}

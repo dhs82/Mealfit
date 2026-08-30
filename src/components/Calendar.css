@@ -1,19 +1,48 @@
-/* src/components/Calendar.css */
-.react-calendar {
-  width: 100%;
-  border: none;
-  font-family: 'Noto Sans KR', sans-serif;
-}
-
+/*Calendar.css*/
+/* 숫자/텍스트를 한 줄로 중앙 정렬, 밑줄 제거 */
 .react-calendar__tile {
-  padding: 0.75rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0 !important; /* 필요시 조절 */
+  line-height: 1;                 /* 줄바꿈 최소화 */
+}
+.react-calendar__tile abbr {
+  text-decoration: none;
+  white-space: nowrap;            /* 두 줄 방지 */
+}
+.react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none;
+}
+/* 큰 달력 전용 래퍼 */
+.calendar-lg { 
+  display: inline-block;          /* 내용 크기만큼만 차지 */
 }
 
-.react-calendar__tile--now {
-  background: #d1fae5 !important;
+/* 전체 폰트 사이즈 살짝 업 */
+.calendar-lg .react-calendar {
+  font-size: 1.125rem;            /* ≈ text-base */
 }
 
-.react-calendar__tile--active {
-  background: #60a5fa !important;
-  color: white !important;
+/* 네비게이션(월/연도 표시) 버튼 크기 업 */
+.calendar-lg .react-calendar__navigation button {
+  padding: 0.6rem 0 !important;
+  font-size: 1rem;
+}
+
+/* 요일 헤더 */
+.calendar-lg .react-calendar__month-view__weekdays {
+  font-size: 0.9rem;
+}
+
+/* 날짜 타일 공간 넓히기 (실제 박스 크기 증가) */
+.calendar-lg .react-calendar__tile {
+  padding: 0.9rem !important;     /* ⬅️ 이게 핵심: scale 대신 실제 크기 증가 */
+  line-height: 1; 
+}
+
+/* 숫자 두 줄 방지 & 밑줄 제거 */
+.calendar-lg .react-calendar__tile abbr {
+  text-decoration: none;
+  white-space: nowrap;
 }

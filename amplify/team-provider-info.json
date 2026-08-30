@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mealfit-dev-921f0-authRole",
+      "UnauthRoleArn": "arn:aws:iam::572828071769:role/amplify-mealfit-dev-921f0-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::572828071769:role/amplify-mealfit-dev-921f0-authRole",
+      "Region": "ap-northeast-2",
+      "DeploymentBucketName": "amplify-mealfit-dev-921f0-deployment",
+      "UnauthRoleName": "amplify-mealfit-dev-921f0-unauthRole",
+      "StackName": "amplify-mealfit-dev-921f0",
+      "StackId": "arn:aws:cloudformation:ap-northeast-2:572828071769:stack/amplify-mealfit-dev-921f0/3bc51910-39d7-11f0-aacd-02a0dfc10a63",
+      "AmplifyAppId": "d1ekbpxgugfvw3"
+    },
+    "categories": {
+      "api": {
+        "mealfit": {}
+      }
+    }
+  }
+}

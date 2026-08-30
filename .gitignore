@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Created by https://www.toptal.com/developers/gitignore/api/windows,pycharm,visualstudiocode,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,pycharm,visualstudiocode,python
 
@@ -333,6 +332,37 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,pycharm,visualstudiocode,python
-=======
-node_modules
->>>>>>> 1a0230f (main page UI design)
+
+# JetBrains project metadata
+.idea/
+
+# Lambda deployment artifacts and locally installed dependencies. The
+# Dockerfile installs dependencies during the image build, so only the
+# handler and model artifacts belong in source control.
+lambda/*
+!lambda/Dockerfile
+!lambda/handler.py
+!lambda/*.pkl
+!lambda/*.pt
+
+#amplify-do-not-edit-begin
+amplify/\#current-cloud-backend
+amplify/.config/local-*
+amplify/logs
+amplify/mock-data
+amplify/mock-api-resources
+amplify/backend/amplify-meta.json
+amplify/backend/.temp
+build/
+dist/
+node_modules/
+aws-exports.js
+awsconfiguration.json
+amplifyconfiguration.json
+amplifyconfiguration.dart
+amplify-build-config.json
+amplify-gradle-config.json
+amplifytools.xcconfig
+.secret-*
+**.sample
+#amplify-do-not-edit-end

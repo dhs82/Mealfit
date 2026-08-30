@@ -1,0 +1,38 @@
+enum MealTime {
+  BREAKFAST
+  LUNCH
+  DINNER
+}
+
+type MealSlot {
+  items: [String!]! # 예: ["콩밥","미역국","김치"]
+  calories: Int! # 해당 끼니 총칼로리(kcal)
+  protein: Float! # 해당 끼니 총단백질(g)
+  predictedCount: Float
+}
+
+type Meal @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  date: AWSDate! # 2025-05-26
+  breakfast: MealSlot!
+  lunch: MealSlot!
+  dinner: MealSlot!
+  createdAt: AWSDateTime!
+  updatedAt: AWSDateTime!
+}
+
+# ───────────────────────────────────────────
+
+enum Term {
+  FIRST
+  SUMMER
+  SECOND
+  WINTER
+}
+
+type PeopleCount @model @auth(rules: [{ allow: public }]) {
+  id: ID!
+  year: Int!
+  term: Term!
+  count: Int!
+}
