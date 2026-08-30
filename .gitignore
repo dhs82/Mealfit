@@ -238,6 +238,8 @@ celerybeat.pid
 
 # Environments
 .env
+.env.local
+.env.*.local
 .venv
 env/
 venv/
@@ -336,14 +338,14 @@ $RECYCLE.BIN/
 # JetBrains project metadata
 .idea/
 
-# Lambda deployment artifacts and locally installed dependencies. The
-# Dockerfile installs dependencies during the image build, so only the
-# handler and model artifacts belong in source control.
-lambda/*
-!lambda/Dockerfile
-!lambda/handler.py
-!lambda/*.pkl
-!lambda/*.pt
+# Legacy Lambda build directory. Runtime source now lives in
+# services/prediction and dependencies are installed by its Dockerfile.
+lambda/
+
+# Python runtime caches
+**/__pycache__/
+**/*.py[cod]
+.pytest_cache/
 
 #amplify-do-not-edit-begin
 amplify/\#current-cloud-backend

@@ -6,6 +6,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:ci": "react-scripts test --watchAll=false --passWithNoTests",
+    "test:prediction": "python3 -m unittest discover -s services/prediction/tests",
+    "check": "npm run test:ci && npm run build && npm run test:prediction",
     "eject": "react-scripts eject"
   },
   "dependencies": {

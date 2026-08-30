@@ -1,0 +1,17 @@
+{
+  "modelVersion": "legacy-v1",
+  "input": {
+    "numericFeatureCount": 13,
+    "embeddingDimensions": 32,
+    "maximumMenuTokens": 20
+  },
+  "trainingRuntime": {
+    "python": "3.12.3",
+    "torch": "2.6.0",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "joblib": "1.4.2",
+    "scikitLearn": "1.6.1"
+  },
+  "notes": "Version reconstructed from the original inference notebook and serialized model metadata."
+}

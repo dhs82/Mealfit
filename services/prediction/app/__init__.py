@@ -1,0 +1,1 @@
+"""Mealfit prediction Lambda application."""

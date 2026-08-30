@@ -1,7 +1,7 @@
 // src/index.js
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import App from "./app/App";
 import "./index.css";
 import { Amplify } from 'aws-amplify';
 import awsExports from "./aws-exports";
