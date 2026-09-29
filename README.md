@@ -30,44 +30,37 @@
 
 ## 01. 기술 스택
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Frontend</h3>
-      <p>관리자 화면과 식단 입력 흐름</p>
-      <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&amp;logo=javascript&amp;logoColor=black">
-      <img alt="React" src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&amp;logo=react&amp;logoColor=black"><br>
-      <img alt="React Router" src="https://img.shields.io/badge/React%20Router-CA4245?style=for-the-badge&amp;logo=reactrouter&amp;logoColor=white">
-      <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&amp;logo=tailwindcss&amp;logoColor=white">
-    </td>
-    <td width="50%" valign="top">
-      <h3>Cloud &amp; API</h3>
-      <p>식단·학생 수 저장과 예측 API 연결</p>
-      <img alt="AWS Amplify" src="https://img.shields.io/badge/AWS%20Amplify-FF9900?style=for-the-badge">
-      <img alt="AWS AppSync" src="https://img.shields.io/badge/AWS%20AppSync-8C4FFF?style=for-the-badge"><br>
-      <img alt="Amazon DynamoDB" src="https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=for-the-badge">
-      <img alt="AWS Lambda" src="https://img.shields.io/badge/AWS%20Lambda-FF9900?style=for-the-badge"><br>
-      <img alt="Amazon API Gateway" src="https://img.shields.io/badge/Amazon%20API%20Gateway-8C4FFF?style=for-the-badge">
-      <img alt="GraphQL" src="https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&amp;logo=graphql&amp;logoColor=white">
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>AI &amp; ML</h3>
-      <p>메뉴 임베딩과 식사 비율 추론</p>
-      <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&amp;logo=python&amp;logoColor=white">
-      <img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&amp;logo=scikitlearn&amp;logoColor=white"><br>
-      <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&amp;logo=pytorch&amp;logoColor=white">
-      <img alt="NumPy" src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&amp;logo=numpy&amp;logoColor=white">
-    </td>
-    <td width="50%" valign="top">
-      <h3>Build &amp; Validation</h3>
-      <p>추론 컨테이너와 자동 검증 구성</p>
-      <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&amp;logo=docker&amp;logoColor=white">
-      <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&amp;logo=githubactions&amp;logoColor=white">
-    </td>
-  </tr>
-</table>
+<p>
+  <strong>Frontend</strong><br>
+  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&amp;logo=javascript&amp;logoColor=black">
+  <img alt="React" src="https://img.shields.io/badge/React-61DAFB?style=flat-square&amp;logo=react&amp;logoColor=black">
+  <img alt="React Router" src="https://img.shields.io/badge/React%20Router-CA4245?style=flat-square&amp;logo=reactrouter&amp;logoColor=white">
+  <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&amp;logo=tailwindcss&amp;logoColor=white">
+</p>
+
+<p>
+  <strong>Backend · Data</strong><br>
+  <img alt="AWS Amplify" src="https://img.shields.io/badge/AWS%20Amplify-FF9900?style=flat-square">
+  <img alt="AWS AppSync" src="https://img.shields.io/badge/AWS%20AppSync-8C4FFF?style=flat-square">
+  <img alt="Amazon DynamoDB" src="https://img.shields.io/badge/Amazon%20DynamoDB-4053D6?style=flat-square">
+  <img alt="GraphQL" src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&amp;logo=graphql&amp;logoColor=white">
+</p>
+
+<p>
+  <strong>AI · ML</strong><br>
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=white">
+  <img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&amp;logo=scikitlearn&amp;logoColor=white">
+  <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&amp;logo=pytorch&amp;logoColor=white">
+  <img alt="NumPy" src="https://img.shields.io/badge/NumPy-013243?style=flat-square&amp;logo=numpy&amp;logoColor=white">
+</p>
+
+<p>
+  <strong>Infrastructure · CI</strong><br>
+  <img alt="AWS Lambda" src="https://img.shields.io/badge/AWS%20Lambda-FF9900?style=flat-square">
+  <img alt="Amazon API Gateway" src="https://img.shields.io/badge/Amazon%20API%20Gateway-8C4FFF?style=flat-square">
+  <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&amp;logo=docker&amp;logoColor=white">
+  <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&amp;logo=githubactions&amp;logoColor=white">
+</p>
 
 <details>
 <summary>세부 기술과 실행 버전 보기</summary>
