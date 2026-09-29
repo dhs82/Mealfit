@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Mealfit — Meal Demand Forecasting</title>
+  <desc id="desc">Mealfit project cover in green and blue, with a plate and leaf illustration. Plan meals, predict demand, review results.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b302c"/>
+      <stop offset="1" stop-color="#101f45"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4ade80"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="320" rx="24" fill="url(#background)"/>
+  <path d="M750 0H1200V320H960Z" fill="#ffffff" opacity=".025"/>
+  <circle cx="1000" cy="160" r="220" fill="none" stroke="#ffffff" stroke-opacity=".04"/>
+  <circle cx="1000" cy="160" r="166" fill="none" stroke="#ffffff" stroke-opacity=".07"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="58" y="49" width="30" height="4" rx="2" fill="url(#accent)"/>
+    <text x="102" y="57" fill="#a7d7cc" font-size="15" letter-spacing="3">MEAL DEMAND FORECASTING</text>
+    <text x="56" y="159" fill="#f4faf9" font-size="88" font-weight="700" letter-spacing="-4">Mealfit<tspan fill="#6ee7b7">.</tspan></text>
+    <text x="61" y="201" fill="#c2d7dc" font-size="21">From meal plans to demand forecasts.</text>
+    <g font-size="13" font-weight="600" letter-spacing="1.5">
+      <text x="61" y="269" fill="#86efac">01 / PLAN</text>
+      <path d="M168 264H201" stroke="#5d8587"/>
+      <text x="223" y="269" fill="#99e2d5">02 / PREDICT</text>
+      <path d="M359 264H392" stroke="#5d8587"/>
+      <text x="414" y="269" fill="#93c5fd">03 / REVIEW</text>
+    </g>
+  </g>
+  <g transform="translate(986 160)">
+    <circle r="103" fill="#ffffff" fill-opacity=".04" stroke="url(#accent)" stroke-width="2"/>
+    <circle r="81" fill="none" stroke="#ffffff" stroke-opacity=".16"/>
+    <path d="M-33 29C-65-21-29-66 35-54C60-11 29 45-33 29Z" fill="#4ade80" fill-opacity=".85"/>
+    <path d="M-39 44L22-34M-14 13L-26-16M2-5L28-8" fill="none" stroke="#0b302c" stroke-width="4" stroke-linecap="round"/>
+    <path d="M-136-47V-14Q-136-4-126-4Q-116-4-116-14V-47M-126-47V67" fill="none" stroke="#a7c7ce" stroke-width="4" stroke-linecap="round"/>
+    <path d="M127-48V68M127-48Q110-18 114 3H127" fill="none" stroke="#a7c7ce" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>
